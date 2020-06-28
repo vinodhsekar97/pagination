@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="data.js"></script>
+    <script src="pagination.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <select onchange="setVal(this.value)">
+        <option value="5" selected>5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option> </select
+      ><br />
+      <table id="table"></table>
+      <div class="btns">
+        <button onclick="prev()">Previous</button>
+        <div id="numBtns"></div>
+        <button onclick="next()">Next</button>
+      </div>
+    </div>
+  </body>
+</html>
